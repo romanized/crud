@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(217,217,198);
+    background: linear-gradient(90deg, rgba(217,217,198,0.4149860627844888) 43%, rgba(240,240,208,0.4149860627844888) 47%); 
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: center;
+}
+
+
+.btn-spacing {
+    margin-right: 10px;
+}
