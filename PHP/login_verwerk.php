@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error</title>
+    <link rel="shortcut icon" href="../MEDIA/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <?php
 require 'config.php';
 session_start();
@@ -17,9 +27,15 @@ if ($result->num_rows > 0) {
         $_SESSION['gebruikersnaam'] = $username;
         header('Location: toonagenda.php');
     } else {
-        echo "Onjuiste inloggegevens.";
+        echo "<div class='error-message'>Onjuiste inloggegevens.</div>";
+        echo "<div class='back-to-login'><a href='login.php'>Terug naar Inloggen</a></div>";
     }
 } else {
-    echo "Onjuiste inloggegevens.";
+    echo "<div class='error-message'>Onjuiste inloggegevens.</div>";
+    echo "<div class='back-to-login'><a href='login.php'>Terug naar Inloggen</a></div>";
 }
 ?>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 18px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message,
+.back-to-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-to-login a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #137cec;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-left: 12px;
+}
+
+.back-to-login a:hover {
+  background-color: #167ae5;
+}

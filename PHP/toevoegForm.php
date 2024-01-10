@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Item Toevoegen</title>
     <link rel="stylesheet" href="../CSS/toevoegForm.css">
     <link rel="shortcut icon" href="../MEDIA/images.png" type="image/x-icon">
 </head>
+
 <body>
     <?php
     require 'session.inc.php';
@@ -19,13 +21,14 @@
         <label>Inhoud: <input type="text" name="inhoudVeld" required></label>
         <label>Begindatum: <input type="date" name="begindatumVeld" required></label>
         <label>Einddatum: <input type="date" name="einddatumVeld" required></label>
-        <label>Prioriteit: <input type="number" id="prioriteitVeld" name="prioriteitVeld" min="1" max="5" required oninput="validatePrioriteit()"></label>
-        <label>Status: 
+        <label>Prioriteit: <input type="number" id="prioriteitVeld" name="prioriteitVeld" min="1" max="5" required
+                oninput="validatePrioriteit()"></label>
+        <label>Status:
             <select name="statusVeld" required>
                 <option value="">Kies een status...</option>
-                <option value="Niet begonnen">Niet begonnen</option>
-                <option value="Bezig">Bezig</option>
-                <option value="Afgerond">Afgerond</option>
+                <option value="n">Niet begonnen</option>
+                <option value="b">Bezig</option>
+                <option value="a">Afgerond</option>
             </select>
         </label>
         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
@@ -33,4 +36,5 @@
     </form>
     <script defer src="../JS/toevoegForm.js"></script>
 </body>
+
 </html>
